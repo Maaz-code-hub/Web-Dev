@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity is 1+10 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity is 10 */
+        .red {
+            color: red;
+        }
+
+        /* The specificity is 10 */
+        .purple {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="red yellow purple">CSS SPECIFICITY</h1>
+    </div>
+</body>
+
+</html>
