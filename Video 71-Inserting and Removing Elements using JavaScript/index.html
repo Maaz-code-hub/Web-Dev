@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="Mk" data-conceptby="arsh">hey i am a box</div>
+        <div class="box">hey i am a box</div>
+    </div>
+</body>
+<script>
+    // let div=document.createElement("div");
+    // div.innerHTML="I have been inserted <b> by MK</b>"
+    // div.setAttribute("class","created");
+    // // document.querySelector(".container").append(div);       //at the end inside container
+    // // document.querySelector(".container").before(div);       //before container
+    // document.querySelector(".container").after(div);           //after container
+    let cont=document.querySelector(".container")
+    // cont.insertAdjacentHTML("afterbegin","<b> I am under the water.Please help me it's raining here...</b>")
+    cont.insertAdjacentHTML("beforebegin","<b> I am under the water.Please help me it's raining here...</b>")
+    // cont.insertAdjacentHTML("afterend","<b> I am under the water.Please help me it's raining here...</b>")
+    // cont.insertAdjacentHTML("beforeend","<b> I am under the water.Please help me it's raining here...</b>")
+</script>
+</html>
+
+<!-- 
+document.queryselector(".box")
+document.queryselector(".box").innerHTML
+document.queryselector(".box").innerText
+document.queryselector(".container").innerHTML
+document.queryselector(".container").innerText
+document.querySelector(".container").outerHTML
+document.querySelector(".container").tagName
+document.querySelector(".container").nodeName
+document.querySelector(".container").textContent
+document.querySelector(".container").hidden
+document.querySelector(".container").hidden=true
+document.querySelector(".box").innerHTML="Hey i am maaz"
+document.querySelector(".box").hasAttribute("style")
+document.querySelector(".box").getAttribute("style")
+document.querySelector(".box").setAttribute("style","display:inline")
+document.querySelector(".box").attributes
+document.querySelector(".box").removeAttribute("style")
+document.designMode="on"
+document.querySelector(".box").dataset
+document.querySelector(".box").remove()
+document.querySelector(".container").classList
+document.querySelector(".container").className
+document.querySelector(".container").classList.add("MK")
+document.querySelector(".container").classList.remove("MK")
+-->
