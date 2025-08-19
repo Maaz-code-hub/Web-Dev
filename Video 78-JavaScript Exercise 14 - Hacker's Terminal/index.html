@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #terminal{
+            max-width: 90%;
+            min-height: 700px;
+            background-color: black;
+            color: green;
+            border: 2px solid rgb(150, 57, 57);
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">Is this working?</div>
+    <button onclick="starthacking()" >click me</button>
+</body>
+<script>
+    function starthacking(){
+        const terminal=document.getElementById('terminal')
+        text=`
+        Initializing Hacking...
+        Reading your Files...
+        Password files Detected...
+        Sending all passwords and personal files to server...
+        Cleaning up...`
+
+    
+        terminal.innerText=text
+        console.log(text)
+    }
+</script>
+</html>
