@@ -13,6 +13,7 @@
 
 // rabbit.__proto__ = animal; //sets rabbit.[[prototype]] = animal
 
+
 class Animal {
   constructor(name) {
     this.name = name
